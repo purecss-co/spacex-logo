@@ -1,7 +1,8 @@
 # PureCSS - Title
-Responsive Title using HTML and CSS
 
-[Visit title](link here)
+Responsive SpaceX Logo using HTML and CSS
+
+[Visit SpaceX Website](https://www.spacex.com/)
 
 <div align="center">
    <img src="screenshot.png" width="800" />
