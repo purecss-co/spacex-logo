@@ -1,4 +1,4 @@
-# PureCSS - Title
+# PureCSS - Responsive SpaceX Logo
 
 Responsive SpaceX Logo using HTML and CSS
 
