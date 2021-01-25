@@ -1,12 +1,6 @@
 // colors
-$bg-color: #000000;
-$logo-color: #ffffff;
-
-@mixin shape($width, $height, $background) {
-  width: $width;
-  height: $height;
-  background: $background;
-}
+$bg-color: #000;
+$logo-color: #fff;
 
 html,
 body {
@@ -35,189 +29,233 @@ body {
 .logo {
   width: 90vmin;
   height: 11.5vmin;
-  background: transparent;
   overflow: hidden;
 
   .s-1 {
-    @include shape(2vmin, 1.21vmin, $logo-color);
-    left: -72vmin;
+    width: 2vmin;
+    height: 1.21vmin;
+    background: $logo-color;
     top: -1.4vmin;
-    border-top-right-radius: 100%;
+    left: -72vmin;
+    border-radius: 0 100% 0 0;
 
     &::before {
-      @include shape(7.7vmin, 1.21vmin, $logo-color);
+      width: 7.7vmin;
+      height: 1.21vmin;
+      background: $logo-color;
       left: -7.7vmin;
-      border-top-left-radius: 2vmin;
+      border-radius: 2vmin 0 0 0;
     }
 
     &::after {
-      @include shape(1.9vmin, 3vmin, $logo-color);
-      left: -7.7vmin;
+      width: 1.9vmin;
+      height: 3vmin;
+      background: $logo-color;
       top: 1.1vmin;
-      border-bottom-left-radius: 1.5vmin;
+      left: -7.7vmin;
+      border-radius: 0 0 0 1.5vmin;
     }
   }
 
   .s-2 {
-    @include shape(2vmin, 1.3vmin, $logo-color);
-    left: -71.6vmin;
+    width: 2vmin;
+    height: 1.3vmin;
+    background: $logo-color;
     top: 4.1vmin;
-    border-top-right-radius: 100%;
+    left: -71.6vmin;
+    border-radius: 0 100% 0 0;
 
     &::before {
-      @include shape(6vmin, 1.3vmin, $logo-color);
+      width: 6vmin;
+      height: 1.3vmin;
+      background: $logo-color;
       left: -6vmin;
     }
 
     &::after {
-      @include shape(1.9vmin, 2.9vmin, $logo-color);
-      left: 0.1vmin;
+      width: 1.9vmin;
+      height: 2.9vmin;
+      background: $logo-color;
       top: 1.3vmin;
-      border-bottom-right-radius: 1.4vmin;
+      left: 0.1vmin;
+      border-radius: 0 0 1.4vmin 0;
     }
   }
 
   .s-3 {
-    @include shape(7vmin, 1.3vmin, $logo-color);
-    left: -80.2vmin;
+    width: 7vmin;
+    height: 1.3vmin;
+    background: $logo-color;
     top: 9.9vmin;
+    left: -80.2vmin;
 
     &::before {
-      @include shape(1.6vmin, 1.3vmin, $logo-color);
+      width: 1.6vmin;
+      height: 1.3vmin;
+      background: $logo-color;
       left: -1.3vmin;
-      border-bottom-left-radius: 100%;
+      border-radius: 0 0 0 100%;
     }
   }
 
   .p {
-    @include shape(8vmin, 4.3vmin, $logo-color);
-    left: -51.5vmin;
+    width: 8vmin;
+    height: 4.3vmin;
+    background: $logo-color;
     top: 1.7vmin;
-    border-top-right-radius: 35%;
-    border-bottom-right-radius: 32%;
+    left: -51.5vmin;
+    border-radius: 0 35% 32% 0;
 
     &::before {
-      @include shape(6.1vmin, 1.7vmin, $bg-color);
+      width: 6.1vmin;
+      height: 1.7vmin;
+      background: $bg-color;
       top: 1.25vmin;
       left: 0.1vmin;
-      border-top-right-radius: 23%;
-      border-bottom-right-radius: 22%;
+      border-radius: 0 23% 22% 0;
     }
 
     &::after {
-      @include shape(2.1vmin, 7vmin, $logo-color);
+      width: 2.1vmin;
+      height: 7vmin;
+      background: $logo-color;
       left: -2vmin;
     }
   }
 
   .a {
-    border-bottom: 1.2vmin solid $logo-color;
+    width: 7vmin;
+    height: 0;
     border-left: 1vmin solid transparent;
     border-right: 1vmin solid transparent;
-    height: 0;
-    width: 7vmin;
+    border-bottom: 1.2vmin solid $logo-color;
     top: 7vmin;
     left: -33.5vmin;
 
     &::before {
-      border-bottom: 2.02vmin solid $logo-color;
+      width: 8.2vmin;
+      height: 0;
       border-left: 1vmin solid transparent;
       border-right: 0vmin solid transparent;
-      height: 0;
-      width: 8.2vmin;
-      transform: rotate(-126deg) skewX(15deg);
+      border-bottom: 2.02vmin solid $logo-color;
       left: 1.1vmin;
       top: -1.1vmin;
+      transform: rotate(-126deg) skewX(15deg);
     }
   }
 
   .c {
-    @include shape(10.1vmin, 7vmin, $logo-color);
-    left: -6.5vmin;
+    width: 10.1vmin;
+    height: 7vmin;
+    background: $logo-color;
     top: 4.2vmin;
+    left: -6.5vmin;
     border-radius: 1.6vmin;
 
     &::before {
-      @include shape(8vmin, 4.3vmin, $bg-color);
-      left: 2.2vmin;
+      width: 8vmin;
+      height: 4.3vmin;
+      background: $bg-color;
       top: 1.4vmin;
+      left: 2.2vmin;
     }
   }
 
   .e-1 {
-    @include shape(9.55vmin, 1.3vmin, $logo-color);
+    width: 9.55vmin;
+    height: 1.3vmin;
+    background: $logo-color;
     top: -1.3vmin;
     left: 19.4vmin;
 
     &::before {
-      @include shape(6.5vmin, 1.2vmin, $logo-color);
+      width: 6.5vmin;
+      height: 1.2vmin;
+      background: $logo-color;
       top: 2.3vmin;
       left: -0.2vmin;
     }
 
     &::after {
-      @include shape(2.2vmin, 3.5vmin, $logo-color);
-      left: -0.2vmin;
+      width: 2.2vmin;
+      height: 3.5vmin;
+      background: $logo-color;
       top: 2.8vmin;
+      left: -0.2vmin;
     }
   }
 
   .e-2 {
-    @include shape(9.55vmin, 1.4vmin, $logo-color);
-    left: 19vmin;
+    width: 9.55vmin;
+    height: 1.4vmin;
+    background: $logo-color;
     top: 10vmin;
+    left: 19vmin;
   }
 
   .x-1 {
-    @include shape(3.4vmin, 4vmin, $logo-color);
-    left: 43vmin;
+    width: 3.4vmin;
+    height: 4vmin;
+    background: $logo-color;
     top: 1.3vmin;
+    left: 43vmin;
     transform: skewX(54deg);
 
     &::before {
-      @include shape(32vmin, 14vmin, $logo-color);
-      transform: skewX(-54deg) rotate(-2.4deg);
-      left: -5.1vmin;
+      width: 32vmin;
+      height: 14vmin;
+      background: $logo-color;
       top: -3.6vmin;
-      border-top-left-radius: 100%;
+      left: -5.1vmin;
+      transform: skewX(-54deg) rotate(-2.4deg);
+      border-radius: 100% 0 0 0;
     }
 
     &::after {
-      @include shape(20vmin, 14vmin, $logo-color);
-      transform: skewX(-54deg) rotate(-6deg) skewX(-15deg);
+      width: 20vmin;
+      height: 14vmin;
+      background: $logo-color;
       left: -13.2vmin;
-      top: 0vmin;
-      border-top-left-radius: 100%;
+      transform: skewX(-54deg) rotate(-6deg) skewX(-15deg);
+      border-radius: 100% 0 0 0;
     }
   }
 
   .x-2 {
-    @include shape(32vmin, 14vmin, $bg-color);
-    border-top-left-radius: 100%;
-    left: 64.6vmin;
+    width: 32vmin;
+    height: 14vmin;
+    background: $bg-color;
     top: 4vmin;
+    left: 64.6vmin;
     transform: rotate(-3.8deg);
+    border-radius: 100% 0 0 0;
 
     &::before {
-      @include shape(20vmin, 14vmin, $bg-color);
-      border-top-left-radius: 100%;
+      width: 20vmin;
+      height: 14vmin;
+      background: $bg-color;
       top: 3vmin;
       left: -2.4vmin;
-      transform: rotate(0deg) skewX(-8deg);
+      transform: skewX(-8deg);
+      border-radius: 100% 0 0 0;
     }
 
     &::after {
-      @include shape(0.6vmin, 4vmin, $bg-color);
-      transform: rotate(60deg);
-      left: 2.3vmin;
+      width: 0.6vmin;
+      height: 4vmin;
+      background: $bg-color;
       top: 3.3vmin;
+      left: 2.3vmin;
+      transform: rotate(60deg);
     }
   }
 
   .x-3 {
-    @include shape(2.1vmin, 6vmin, $logo-color);
-    left: 53.8vmin;
+    width: 2.1vmin;
+    height: 6vmin;
+    background: $logo-color;
     top: 9.5vmin;
+    left: 53.8vmin;
     transform: rotate(-35deg) skewX(18deg);
   }
 }
